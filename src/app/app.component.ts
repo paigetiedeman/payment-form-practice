@@ -11,6 +11,7 @@ export class AppComponent {
   date!: string;
   amount!: number;
   height!: number;
+  miles!: number;
 
   // practice
   car = {
@@ -31,5 +32,8 @@ export class AppComponent {
   }
   onHeightChange(value: string) {
     this.height = parseFloat(value);
+  }
+  onMilesChange(value: string) {
+    this.miles = parseFloat(value);
   }
 }
