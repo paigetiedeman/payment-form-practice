@@ -23,7 +23,21 @@
     <div class="col">
       <label><b>Date</b></label>
       <div>
-        {{ date | date }}
+        {{ date | date: 'MMMM d, y' }}
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="form-group col">
+
+      <label>Payment Amount</label>
+      <input (input)="onAmountChange($event.target.value)" class="form-control" type="number" />
+    </div>
+    <div class="col">
+      <label><b>Payment Amount</b></label>
+      <div>
+        {{ amount | currency }}
       </div>
     </div>
 
