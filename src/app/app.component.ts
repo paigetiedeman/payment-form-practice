@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-  name: string;
+  name!: string;
 
   onNameChange(value: string) {
     this.name = value;
